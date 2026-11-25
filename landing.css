@@ -1,0 +1,49 @@
+/* 영하의 맛집기행 — 여행 기록장처럼 펼쳐지는 첫 화면 */
+.landing-page{background:#f4f7f0}
+.landing-page .site-header{background:transparent;border-bottom-color:#d8e1d3}
+.landing-page .site-header nav a[aria-current="page"]{color:var(--green);text-decoration:underline;text-underline-offset:7px}
+.landing-page .header-note{font-size:12px;letter-spacing:1px}
+.journey-hero{display:grid;grid-template-columns:1fr 1.05fr;align-items:center;gap:44px;min-height:685px;padding-block:56px 70px}
+.journey-copy{position:relative;z-index:1}
+.journey-eyebrow{color:#466448;font-weight:700;font-size:14px;letter-spacing:.4px;margin:0 0 22px}
+.journey-hero h1{font-size:clamp(64px,6.9vw,91px);line-height:1.15;letter-spacing:-5px;font-weight:800;margin:0 0 28px}
+.journey-hero h1>span:not(.title-period){color:var(--green)}
+.journey-hero .title-period{color:#9bad49}
+.journey-description{color:#526252;font-size:17px;line-height:1.95;margin:0 0 29px;letter-spacing:-.35px}
+.small-break{display:none}
+.journey-button{display:inline-flex;align-items:center;justify-content:center;min-height:58px;padding:14px 31px;border-radius:8px;background:var(--green);color:#fff;font-size:17px;font-weight:700;box-shadow:0 4px 0 #123c2c;transition:background .2s,transform .2s}
+.journey-button:hover{background:#123c2c;text-decoration:none;transform:translateY(-2px)}
+.journey-button-note{color:#63735f;font-size:13px;margin:17px 0 0}
+.journey-collage{position:relative;isolation:isolate;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 20px;padding:26px 22px 20px;align-self:center}
+.journey-collage:before{content:"";position:absolute;inset:10px -8px -3px;background:#e6eddd;border-radius:49% 46% 43% 47%;transform:rotate(-8deg);z-index:-2}
+.journey-route{position:absolute;inset:-18px -22px;width:calc(100% + 44px);height:calc(100% + 36px);z-index:-1;color:#80976d;overflow:visible;pointer-events:none}
+.journey-postcard{background:#fff;margin:0;padding:10px 10px 14px;box-shadow:0 7px 17px #263b251b;position:relative;border:1px solid #e3e8de}
+.postcard-image{height:158px;display:flex;align-items:center;justify-content:center;background:#edf0e8;overflow:hidden}
+.postcard-image img{width:100%;height:100%;object-fit:contain;display:block}
+.journey-postcard figcaption{padding:10px 4px 0;display:flex;flex-direction:column;gap:2px}
+.journey-postcard strong{font-size:16px;letter-spacing:-.4px}
+.journey-postcard figcaption span{font-size:12px;color:#697461}
+.postcard-nongmin{transform:rotate(-7deg);z-index:1}
+.postcard-sushi{transform:translateY(20px) rotate(6deg)}
+.postcard-geodae{transform:translateY(-3px) rotate(4deg)}
+.postcard-uraeok{transform:translateY(15px) rotate(-5deg);z-index:1}
+.journey-stamp{position:absolute;z-index:2;left:50%;top:50%;transform:translate(-50%,-50%) rotate(-12deg);display:flex;flex-direction:column;align-items:center;justify-content:center;width:105px;height:105px;border:2px solid #4d6d43;outline:1px solid #4d6d43;outline-offset:-7px;border-radius:50%;background:#e0ecb5;color:#34522c;box-shadow:0 3px 12px #192e2220}
+.journey-stamp span{font-size:12px;letter-spacing:1px}
+.journey-stamp strong{font-size:19px;letter-spacing:-.5px;margin-top:3px}
+.journey-strip{background:var(--green);color:#eef3e6;padding-block:21px}
+.journey-strip>.page-width{display:flex;justify-content:space-between;align-items:center;gap:20px}
+.journey-strip span{font-size:16px;font-weight:700;color:var(--lime)}
+.journey-strip p{margin:0;display:flex;gap:20px;font-size:15px}
+.journey-strip i{font-style:normal;color:#94ae86}
+.journey-story{display:grid;grid-template-columns:1fr 1fr;gap:80px;padding-block:72px}
+.journey-story .journey-eyebrow{margin-bottom:16px;font-size:13px}
+.journey-story h2{font-size:31px;line-height:1.55;letter-spacing:-1.1px;margin:0}
+.journey-story-copy{font-size:16px;color:#596655;line-height:1.95;max-width:480px}
+.journey-story-copy p{margin:0 0 15px}
+.journey-story-copy p:last-child{margin:0}
+.landing-footer{border-top:1px solid #d8e1d3}
+@media(max-width:1100px){.journey-hero{gap:30px;min-height:620px}.journey-hero h1{font-size:72px}.postcard-image{height:138px}.journey-collage{gap:20px 14px;padding-inline:14px}.journey-postcard{padding:8px 8px 12px}.journey-postcard strong{font-size:14px}.journey-stamp{width:88px;height:88px}.journey-stamp strong{font-size:17px}.journey-story{gap:40px}.journey-strip p{gap:13px}}
+@media(max-width:850px){.landing-page .header-note{display:none}.journey-hero{grid-template-columns:1fr;gap:38px;padding-block:45px 55px}.journey-copy{text-align:center}.journey-hero h1{font-size:76px;letter-spacing:-4px}.journey-hero h1 br{display:none}.journey-hero h1>span:not(.title-period){margin-left:14px}.journey-eyebrow{margin-bottom:18px}.journey-collage{width:min(100%,510px);margin-inline:auto;gap:22px}.postcard-image{height:165px}.journey-postcard strong{font-size:16px}.journey-stamp{width:100px;height:100px}.journey-strip>.page-width{flex-direction:column;gap:9px}.journey-strip p{font-size:14px;gap:15px}.journey-story{padding-block:48px;gap:28px}.journey-story h2{font-size:26px}}
+@media(max-width:600px){.journey-hero{padding-top:34px;gap:32px}.journey-hero h1{font-size:57px;letter-spacing:-3px}.journey-hero h1 br{display:block}.journey-hero h1>span:not(.title-period){margin-left:0}.journey-description{font-size:16px}.journey-button{font-size:16px;min-height:54px}.journey-collage{padding:15px 17px 20px;gap:20px 15px;max-width:440px}.postcard-image{height:140px}.journey-postcard strong{font-size:14px}.journey-postcard figcaption{padding-inline:1px}.journey-stamp{width:82px;height:82px}.journey-stamp span{font-size:12px;letter-spacing:0}.journey-stamp strong{font-size:16px}.journey-strip p{gap:10px;font-size:13px}.journey-story{grid-template-columns:1fr;gap:20px}.journey-story h2{font-size:28px}.journey-story-copy{max-width:none}.journey-route{inset:-8px -5px;width:calc(100% + 10px);height:calc(100% + 16px)}}
+@media(max-width:600px){.journey-collage:before{inset:0 4px;transform:none}}
+@media(max-width:380px){.journey-hero h1{font-size:53px}.small-break{display:block}.journey-description{font-size:15px}.journey-collage{gap:18px 12px;padding-inline:10px}.postcard-image{height:125px}.journey-postcard{padding:7px}.journey-postcard figcaption span{font-size:12px}.journey-strip p{gap:7px;font-size:12px}.journey-story h2{font-size:26px}}
